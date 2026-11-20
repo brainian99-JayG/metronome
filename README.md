@@ -2,6 +2,9 @@
 
 스마트폰 홈 화면에 설치해서 쓰는 메트로놈입니다. 광고 없음, 인터넷 없이 동작, 앱 용량 약 60KB.
 
+**배포 주소: https://brainian99-jayg.github.io/metronome/**  
+저장소: https://github.com/brainian99-JayG/metronome  (GitHub Pages, `main` / root)
+
 ## 기능
 - BPM 30~300 (−/+ 버튼은 **길게 누르면 연속 증감**, 슬라이더, TAP 입력)
 - 박자표: 1/4, 2/4, 3/4, 4/4, 5/4, 6/8, 9/8, 12/8 (강박·중강박 자동 강세)
