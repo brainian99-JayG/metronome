@@ -1,0 +1,10 @@
+# 참고용 샘플 캡처 (배포 대상 아님)
+KakaoTalk_*.jpg
+
+# 가족 공유용 안내문 (개인 메모 성격)
+가족_공유_안내문.txt
+
+# OS 생성 파일
+Thumbs.db
+desktop.ini
+.DS_Store
