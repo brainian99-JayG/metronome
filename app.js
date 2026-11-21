@@ -379,6 +379,18 @@ document.addEventListener('keydown', e => {
 // 확대 방지 (iOS 더블탭)
 document.addEventListener('dblclick', e => e.preventDefault(), { passive: false });
 
+// ── 화면 높이 보정 ────────────────────────────────────────
+// 모바일 브라우저의 100vh 는 주소창 높이를 빼지 않아 아래쪽 버튼이 화면 밖으로 밀린다.
+// 실제로 보이는 높이를 직접 재서 --appH 로 넘긴다.
+function setAppHeight() {
+  const h = window.innerHeight || document.documentElement.clientHeight;
+  if (h) document.documentElement.style.setProperty('--appH', h + 'px');
+}
+setAppHeight();
+window.addEventListener('resize', setAppHeight);
+window.addEventListener('orientationchange', () => setTimeout(setAppHeight, 200));
+if (window.visualViewport) window.visualViewport.addEventListener('resize', setAppHeight);
+
 // ── 시작 ──────────────────────────────────────────────────
 load();
 setBpm(state.bpm);

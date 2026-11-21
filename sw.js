@@ -1,6 +1,6 @@
 /* 오프라인 동작용 서비스 워커.
  * 파일을 고치면 아래 CACHE 버전 숫자를 올린다 → 가족들 폰에서 다음 실행 시 자동 갱신됨. */
-const CACHE = 'metronome-v1';
+const CACHE = 'metronome-v2';
 const ASSETS = [
   './',
   './index.html',
